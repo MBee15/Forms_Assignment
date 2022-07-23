@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Sign Up Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+
+<style>
+    b{font-size: 30px;}
+    em{font-size: 20px;}
+    label{font-size: 20px;}
+    input{font-size: 20px;}
+    #paymentoptions {font-size: 20px;}
+    p{font-size: 20px;}
+    #gender{font-size: 20px;}
+    legend{text-align: right;}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{font-family: 'Montserrat', sans-serif;}
+</style>
+<body>
+  <fieldset>
+    <legend><h1>Course Sign Up</h1></legend>
+    <form action="" id="form">
+        <div id="divone">
+            <label for="firstname" id="firstname">Firstname:</label>
+            <input type="text" 
+            name="firstname" 
+            id="firstname"
+            placeholder="enter firstname"
+            required/>
+            <hr>
+            <label for="lastname" id="lastname">Lastname:</label>
+            <input type="text" 
+            name="lastname" 
+            id="laststname"
+            placeholder="enter lastname"
+            required/>
+            <hr>
+            <label for="password" id="password">Password:</label>
+            <input type="password" name="password" id="password" 
+            required/>
+            <hr>
+            <label for="email" id="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"/>
+            <hr>
+            <label for="tel" id="telephone">Telephone:</label>
+            <input type="tel" name="tel" id="tel">
+            <hr>
+            <label for="gender" id="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="transgender">Transgender</option>
+                <option value="prefernottosay">Prefer not to say</option>
+            </select>
+            <hr>
+            <label for="paymentoptions" id="paymentoptions">Do have a credit card or PayPal?</label>
+            <select id="paymentoptions">
+                <option value="creditcard">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <hr>
+        </div>
+
+        <div id="divtwo">
+            <p>Are you above 18?</p>
+    <label for="yes">Yes</label>
+    <input type="checkbox" name="yes" value="yes">
+    <label for="no">No</label>
+    <input type="checkbox" name="no" value="no">
+    <p>If no, please input your Date of Birth</p>
+    <label for="date" id="date">Date of Birth</label>
+    <input type="date" name="date" id="date" placeholder="enter date of birth">
+    <hr>
+        </div>
+
+    <div id="divthree">
+        <b>Service Rating</b>
+    <br>
+    <em>Please rate our services provided so far</em>
+    <br>
+    <input type="checkbox" id="excellent" name="excellent" value="excellent">
+    <label for="excellent">Excellent</label><br>
+    <input type="checkbox" id="good" name="good" value="good">
+    <label for="good">Good</label><br>
+    <input type="checkbox" id="neutral" name="neutral" value="neutral">
+    <label for="neutral">Neutral</label><br>
+    <input type="checkbox" id="bad" name="bad" value="bad">
+    <label for="bad>Bad</label><br>
+    <input type="checkbox" id="poor" name="poor" value="poor">
+    <label for="poor">Poor</label>
+    <hr>
+    </div>
+
+    <div id="divfour">
+     <input type="submit" value="Submit Feedback">
+    </div>
+    </form>
+     
+  </fieldset>  
+</body>
+</html>
